@@ -1,0 +1,22 @@
+.product-details-container {
+    margin: 5% 0%;
+}
+
+.product-back-icon:hover {
+    cursor: pointer;
+}
+
+.product-back-icon-container {
+    text-align: left;
+    padding: 0% 2.5%;
+}
+
+.product-pic {
+    width: 90%;
+    margin: auto;
+}
+
+.product-info-container {
+    padding: 2% 5%;
+    text-align: left;
+}

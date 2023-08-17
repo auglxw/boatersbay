@@ -1,0 +1,70 @@
+.login {
+    height: 100vh;
+}
+
+.login-card-container {
+    background-color: #274c77;
+    margin: 0% 10%;
+    margin-bottom: 10%;
+    padding: 3%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.login-input {
+    display: block;
+    background-color: #274c77;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.5rem;
+    outline: none;
+    color: #FFFFFF;
+    margin: 5%;
+    width: 90%;
+    padding: 1%;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+  }
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #FFFFFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #FFFFFF;
+}
+
+.login-button {
+    border: none;
+    outline: none;
+    background-color: #eda20a;
+    color: #FFFFFF;
+    padding: 0.2rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
