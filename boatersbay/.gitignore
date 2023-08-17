@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# firebase
+.firebase
+.firebaserc
+database.rules.json
+firebase.json
+
 # testing
 /coverage
 
@@ -17,6 +23,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
