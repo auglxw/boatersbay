@@ -1,0 +1,25 @@
+.quantity-button {
+    width: fit-content;
+    border: 0.1rem solid #e8e8e8;
+}
+
+.quantity-button * {
+    display: inline-block;
+}
+
+.quantity-button button {
+    background-color: #e8e8e8;
+    outline: None;
+    border: None;
+    padding: 0.2rem 0.7rem;
+}
+
+.quantity-button-amount {
+    padding: 0rem 1rem;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.quantity-button-amount p {
+    margin-bottom: 0%;
+}
