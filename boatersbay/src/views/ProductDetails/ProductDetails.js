@@ -6,12 +6,14 @@ import { onValue, ref } from "firebase/database";
 import Heading from "../../components/Heading/Heading";
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { Grid } from "@mui/material";
+import QuantityButton from "../../components/QuantityButton/QuantityButton";
 
 function ProductDetails() {
   const navigate = useNavigate();
   const params = useParams();
   const productId = params.productId;
   const [details, updateDetails] = useState();
+  const [quantity, updateQuantity] = useState(0);
 
   useEffect(() => {
     const query = ref(db, "Products");
@@ -47,12 +49,19 @@ function ProductDetails() {
             <img src={require("../../img/boat.jpg")} className="product-pic" />
         </Grid>
         <Grid item lg={6} xs={12} className="product-info-container">
-            <p><b>Product</b></p>
+            <p><b>Product Name</b></p>
             <p>{details?.name}</p>
             <p><b>Description</b></p>
             <p>{details?.description}</p>
             <p><b>Price</b></p>
-            <p>{details?.price}</p>
+            <p>SGD {details?.price}</p>
+            {details?.online_purchase ?
+            <>
+            <QuantityButton quantity={quantity} updateQuantityCallback={updateQuantity} />
+            <button className="product-details-add-to-cart-button">Add to Cart</button>
+            </>
+            : <p>Please contact us via email if you wish to purchase this product.</p>
+            }
         </Grid>
     </Grid>
   </div>;
