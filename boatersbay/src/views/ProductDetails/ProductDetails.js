@@ -58,7 +58,16 @@ function ProductDetails() {
             {details?.online_purchase ?
             <>
             <QuantityButton quantity={quantity} updateQuantityCallback={updateQuantity} />
-            <button className="product-details-add-to-cart-button">Add to Cart</button>
+            <button className="product-details-add-to-cart-button" onClick={() => {
+              var cart = JSON.parse(sessionStorage.getItem("boaters-bay-cart"));
+              if (!cart) {
+                cart = {};
+              }
+              const prev_quantity = cart[productId]?.quantity ? cart[productId]?.quantity : 0;
+              cart[productId] = {"name": details?.name, "quantity": prev_quantity + quantity, "price": details?.price};
+              console.log(cart);
+              sessionStorage.setItem("boaters-bay-cart", JSON.stringify(cart));
+            }}>Add to Cart</button>
             </>
             : <p>Please contact us via email if you wish to purchase this product.</p>
             }

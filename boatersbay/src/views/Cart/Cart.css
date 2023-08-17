@@ -1,0 +1,33 @@
+#cart-table {
+    width: 90%;
+    margin: auto;
+}
+
+.cart-total-sum {
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.cart-details-label {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-left: 5%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.cart-details-input {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.cart-checkout-button {
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #274c77;
+    color: #FFFFFF;
+}
