@@ -1,0 +1,21 @@
+.cardGroup {
+    padding: 0%;
+}
+
+.cardRow {
+    margin: auto;
+    width: 100%;
+}
+
+.cardCol {
+    padding: 1% 2%;
+}
+
+.card {
+    padding: 2%;
+    height: 30rem;
+}
+
+.product-page-title {
+    margin-bottom: 0%;
+}
